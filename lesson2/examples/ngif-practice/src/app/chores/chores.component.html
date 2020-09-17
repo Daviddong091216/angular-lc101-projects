@@ -13,3 +13,8 @@
 </div>
 <hr>
 <p *ngIf="chores.length>finishedChores.length">Work harder!</p>
+<p *ngIf='chores.length==0 && finishedChores.length >= 4; else moreWork'>To earn ice cream treat!</p>
+<ng-template #moreWork>
+    <h1>More work to earn ice cream!</h1>
+</ng-template>
+
