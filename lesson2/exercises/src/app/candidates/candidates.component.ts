@@ -16,6 +16,7 @@ export class CandidatesComponent implements OnInit {
     {name: 'Champ', data: {age: 9, mass: '36 kg', sidekick: 'Carly'}, image: 'assets/images/Carly.png'}
   ];
 
+  selectedCrews=[];
   crew = [];
 
   constructor() { }
@@ -24,7 +25,9 @@ export class CandidatesComponent implements OnInit {
   }
 
   // Code the addToCrew function here:
-
+  addToSelected(candidate : string){
+    this.selectedCrews.push(candidate)
+  }
 
   // BONUS: Code the changeMissionName function here:
 
